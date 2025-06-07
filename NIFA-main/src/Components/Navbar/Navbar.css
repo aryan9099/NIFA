@@ -1,0 +1,105 @@
+.navbarHeading{
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    background: linear-gradient(90deg, #812868 0%, #f954a4 100%);
+    color: #fff;
+    padding: 8px 0;
+}
+.navbarHeading h2{
+    font-size: 1rem;
+    margin:0;
+    padding: 5px 10px;   
+}
+.navbarHeading a{
+    text-decoration: none;
+    color: #fff;
+    transition: all 0.6s ease;
+}
+.navbarHeading a:hover{
+    transform: scale(1.1);
+}
+.navbarHeading .icons{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.navbarHeading i{
+    padding: 0 5px;
+}
+.navbar{
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 10px;
+    padding: 0 50px;
+}
+.navbar img{
+    height: 70px;
+}
+.navbar .navbar-ul{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 15px;
+}
+.navbar-ul li a{
+    text-decoration: none;
+    color: #000000a0;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    transition: all 0.6s ease;
+}
+ul li{
+    padding: 10px 0;
+    position: relative;
+}
+ul li::before, ul li::after{
+    position: absolute;
+    content: '';
+    width: 0;
+    height: 2px;
+    background-color: #812868;
+    transition: 0.3s all ease-in-out;
+}
+ul li::before{
+    top: 0;
+    left: 0;
+}
+ul li::after{
+    bottom:0;
+    right:0;
+}
+ul li:hover::before{
+    right: 0;
+    left: 0;
+    width: 100%;
+}
+ul li:hover::after{
+    right: auto;
+    left: 0;
+    width: 100%;
+}
+ul li:hover a{
+    color: #812868;
+}
+.navbar i{
+    display: none;
+}
+
+@media screen and (max-width : 769px)
+ {
+   .navbar .navbar-ul{
+    display: none; 
+   } 
+   .navbar i{
+    display: block;
+   }
+   .navbar{
+     justify-content: space-between;
+   } 
+}

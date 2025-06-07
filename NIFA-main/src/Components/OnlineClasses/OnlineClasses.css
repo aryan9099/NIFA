@@ -1,0 +1,83 @@
+.OnlineClasses{
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-evenly;
+      padding: 20px 20px;
+      background: linear-gradient(100deg, rgba(0, 0, 0, 1), rgba(35, 31, 32, 0.6)), url(../images/appbg.jpg) no-repeat center;
+      background-size: cover;
+      background-attachment: fixed;
+      margin-top: 5vh;
+      color: #fff;
+}
+.right{
+    width: 40%;
+    height: 100%;
+    padding: 0 20px;
+}
+.left{
+    width: 60%;
+    height: 100%;
+    padding: 0 100px;
+}
+.left .iframe{
+    width: 100%;
+    height: 100%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+.left iframe{
+    box-shadow: 3px 3px 8px rgba(0,0,0,.7);
+    transition: all ease-in-out .5s;
+    width: 500px;
+    height: 300px;
+}
+.left iframe:hover{ 
+    transition: all ease-in-out .5s;
+    transform: scale(1.1);
+}
+.right button{
+    background: linear-gradient(90deg, #62204f 0%, #e04590 100%);
+    border: none;
+    outline: none;
+    border: 1px solid #fff;
+    color: #fff;
+    border-radius: 50px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: all ease-in-out 0.3s;
+}
+.OnlineClasses .right button:hover{
+    transform: scale(1.1);
+}
+.right a img{
+    width: 150px;
+    padding: 10px 10px;
+}
+.right h3,p{
+    padding: 15px 0;
+}
+.right p{
+    font-weight: bold;
+    line-height: 1.5rem;
+}
+
+@media screen and (max-width:769px){
+    .OnlineClasses{
+        display: flex;
+        align-items: center;
+        flex-direction: column!important;
+        background-color: #fff;
+    }
+    .right{
+        width: 100%;
+    }
+    .left{
+       width: 100%;
+       height: auto;
+       padding: 0;
+    }
+}

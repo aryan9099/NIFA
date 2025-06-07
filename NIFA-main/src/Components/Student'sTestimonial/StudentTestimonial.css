@@ -1,0 +1,32 @@
+.StudentTestimonial{
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+.container-video{
+    width: 100%;
+    height: auto;
+    display: block;
+    position: relative;
+    background: url(../images/student-talk.jpg) no-repeat center;
+    background-size: cover;
+    padding: 70px 0;
+    background-attachment: fixed;
+}
+.container-video h1{
+    font-family: 'Raleway', sans-serif;
+    color:#fff;
+    text-align:center;
+    margin-bottom:35px;
+}
+.student-videos{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap:2rem;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+.student-videos iframe{
+    width: 380px;
+    height: 200px;
+}

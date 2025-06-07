@@ -1,0 +1,85 @@
+.footer{
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+footer{
+    width: 100%;
+    height: auto;
+    padding: 3rem 5rem;
+    color: #000;
+    background: url(../images/fotbg2.jpeg) no-repeat;
+    background-size: cover;
+    background-position: center;
+  
+}
+.footer-section1{
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Roboto', sans-serif;
+    flex-wrap: wrap;
+}
+footer ol li{
+    list-style: none;
+    padding: 5px 0;
+    font-size: 1rem;
+}
+footer ol li a:hover{
+    color: #741359;
+}
+footer ol li a{
+    text-decoration: none;
+    color: #000;
+}
+footer div{
+    padding: 10px 0;
+}
+footer .InternationalBranches{
+    padding-top: 20px;
+}
+footer h2{
+    font-size: 1rem;
+    padding-bottom: 16px;
+}
+.footer-section{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.footer-section .part1 a{
+    font-size: 1.1rem;
+    color: #000;
+    text-decoration: none;
+    /* margin: 0 10px; */
+}
+
+.footer-section .part1 a:hover{
+    color: #741359;
+}
+.footer-section .part2 img{
+    width: 150px;
+    margin: 0 10px;
+}
+.footer-section .part2 h2{
+    text-align: center;
+}
+.whatsapp{
+    position: fixed;
+    bottom: 10%;
+    right: 50px;
+    background: #3fbb50;
+    font-size: 40px;
+    border-radius: 30px;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 99;
+}
+.whatsapp a{
+    color: white;
+    font-size: 2.3rem;
+}

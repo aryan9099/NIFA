@@ -1,0 +1,46 @@
+.StudentsWork{
+    width: 100%;
+    height: auto;
+    margin-top: 5vh;
+}
+.StudentsWork h1{
+    font-size: 2em;
+    color:#000000cc;
+    text-align: center;
+    padding-bottom: 2vh;
+}
+.StudentsWork .work-images{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    padding: 10px 80px;
+}
+.five{
+    grid-column: span 2;   
+}
+.five img{
+    width: 600px!important;;
+    object-fit: cover;
+}
+.work-images img{
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 3px;
+    padding: 2px;
+}
+@media(max-width:769px){
+    .StudentsWork .work-images{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+@media(max-width:480px){
+    .StudentsWork .work-images{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 2px;
+    }  
+}
+
+  
